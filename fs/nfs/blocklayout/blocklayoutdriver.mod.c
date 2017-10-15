@@ -1,0 +1,126 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x5bfac336, __VMLINUX_SYMBOL_STR(pnfs_unregister_layoutdriver) },
+	{ 0x36e3c4d4, __VMLINUX_SYMBOL_STR(alloc_pages_current) },
+	{ 0x2d3385d3, __VMLINUX_SYMBOL_STR(system_wq) },
+	{ 0x13c4724f, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_init_write) },
+	{ 0xf6c884ad, __VMLINUX_SYMBOL_STR(fs_bio_set) },
+	{ 0x977a7a93, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xd2b09ce5, __VMLINUX_SYMBOL_STR(__kmalloc) },
+	{ 0xaf5bf6ef, __VMLINUX_SYMBOL_STR(nfs_debug) },
+	{ 0x5237ca9, __VMLINUX_SYMBOL_STR(bio_alloc_bioset) },
+	{ 0xdae80100, __VMLINUX_SYMBOL_STR(_raw_spin_unlock) },
+	{ 0x23ad2265, __VMLINUX_SYMBOL_STR(page_cache_next_hole) },
+	{ 0x7c9722ba, __VMLINUX_SYMBOL_STR(nfs_dreq_bytes_left) },
+	{ 0x19f462ab, __VMLINUX_SYMBOL_STR(kfree_call_rcu) },
+	{ 0x8526c35a, __VMLINUX_SYMBOL_STR(remove_wait_queue) },
+	{ 0x8df842d1, __VMLINUX_SYMBOL_STR(rpc_unlink) },
+	{ 0xd780ffe9, __VMLINUX_SYMBOL_STR(pnfs_ld_write_done) },
+	{ 0xd06a38ab, __VMLINUX_SYMBOL_STR(dput) },
+	{ 0x3ca31f35, __VMLINUX_SYMBOL_STR(nfs_net_id) },
+	{ 0x448eac3e, __VMLINUX_SYMBOL_STR(kmemdup) },
+	{ 0xa1374974, __VMLINUX_SYMBOL_STR(put_zone_device_page) },
+	{ 0x651181, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0x999e8297, __VMLINUX_SYMBOL_STR(vfree) },
+	{ 0x4629334c, __VMLINUX_SYMBOL_STR(__preempt_count) },
+	{ 0x75d846a6, __VMLINUX_SYMBOL_STR(rpc_mkpipe_data) },
+	{ 0xb10a4d2e, __VMLINUX_SYMBOL_STR(rpc_mkpipe_dentry) },
+	{ 0xa7ef6ffa, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_test) },
+	{ 0x44b5ee9a, __VMLINUX_SYMBOL_STR(kasprintf) },
+	{ 0xece784c2, __VMLINUX_SYMBOL_STR(rb_first) },
+	{ 0x24dad28b, __VMLINUX_SYMBOL_STR(rpc_get_sb_net) },
+	{ 0x9e88526, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0xffd5a395, __VMLINUX_SYMBOL_STR(default_wake_function) },
+	{ 0xa5d15954, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_cleanup) },
+	{ 0x955a832f, __VMLINUX_SYMBOL_STR(___preempt_schedule) },
+	{ 0x148d08f7, __VMLINUX_SYMBOL_STR(pnfs_generic_sync) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0xedabbb2b, __VMLINUX_SYMBOL_STR(xdr_init_decode_pages) },
+	{ 0x75a4673c, __VMLINUX_SYMBOL_STR(rpc_queue_upcall) },
+	{ 0xedbb6d30, __VMLINUX_SYMBOL_STR(unregister_pernet_subsys) },
+	{ 0x290b95d0, __VMLINUX_SYMBOL_STR(current_task) },
+	{ 0x7e4527c6, __VMLINUX_SYMBOL_STR(__mutex_init) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0xfef65474, __VMLINUX_SYMBOL_STR(bio_add_page) },
+	{ 0x4ec74210, __VMLINUX_SYMBOL_STR(nfs4_find_get_deviceid) },
+	{ 0x4d9b652b, __VMLINUX_SYMBOL_STR(rb_erase) },
+	{ 0x7aaadafc, __VMLINUX_SYMBOL_STR(blkdev_get_by_path) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0xfaf84800, __VMLINUX_SYMBOL_STR(nfs_pageio_reset_write_mds) },
+	{ 0xccb2a533, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0xbdc4e70f, __VMLINUX_SYMBOL_STR(rpc_d_lookup_sb) },
+	{ 0x9bc9fd8e, __VMLINUX_SYMBOL_STR(get_zone_device_page) },
+	{ 0x2469810f, __VMLINUX_SYMBOL_STR(__rcu_read_unlock) },
+	{ 0xd5e23be9, __VMLINUX_SYMBOL_STR(blkdev_get_by_dev) },
+	{ 0x23c695dc, __VMLINUX_SYMBOL_STR(bio_put) },
+	{ 0x70e6a057, __VMLINUX_SYMBOL_STR(nfs4_put_deviceid_node) },
+	{ 0x3e046816, __VMLINUX_SYMBOL_STR(module_put) },
+	{ 0x2f456f2d, __VMLINUX_SYMBOL_STR(rpc_pipe_generic_upcall) },
+	{ 0xe446b2d8, __VMLINUX_SYMBOL_STR(submit_bio) },
+	{ 0xbd9074b1, __VMLINUX_SYMBOL_STR(blk_finish_plug) },
+	{ 0x387e1639, __VMLINUX_SYMBOL_STR(rpc_pipefs_notifier_register) },
+	{ 0xcde03c4b, __VMLINUX_SYMBOL_STR(__free_pages) },
+	{ 0xd0de6afa, __VMLINUX_SYMBOL_STR(rpc_destroy_pipe_data) },
+	{ 0xfd14532a, __VMLINUX_SYMBOL_STR(blkdev_put) },
+	{ 0xf82ec573, __VMLINUX_SYMBOL_STR(rb_prev) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x1000e51, __VMLINUX_SYMBOL_STR(schedule) },
+	{ 0xdca0af25, __VMLINUX_SYMBOL_STR(register_pernet_subsys) },
+	{ 0x4caeb632, __VMLINUX_SYMBOL_STR(rpc_put_sb_net) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0x53efe980, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_readpages) },
+	{ 0xe582963d, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0xe259ae9e, __VMLINUX_SYMBOL_STR(_raw_spin_lock) },
+	{ 0x65994f1, __VMLINUX_SYMBOL_STR(xdr_encode_opaque_fixed) },
+	{ 0xa5526619, __VMLINUX_SYMBOL_STR(rb_insert_color) },
+	{ 0xe5919cb1, __VMLINUX_SYMBOL_STR(xdr_encode_opaque) },
+	{ 0xa6bbd805, __VMLINUX_SYMBOL_STR(__wake_up) },
+	{ 0xc9fef317, __VMLINUX_SYMBOL_STR(add_wait_queue) },
+	{ 0xf8c24dec, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_writepages) },
+	{ 0xa9bd2676, __VMLINUX_SYMBOL_STR(__vmalloc) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0x8e8bf6e0, __VMLINUX_SYMBOL_STR(pnfs_generic_pg_init_read) },
+	{ 0xca9360b5, __VMLINUX_SYMBOL_STR(rb_next) },
+	{ 0xb51a3724, __VMLINUX_SYMBOL_STR(rpc_pipefs_notifier_unregister) },
+	{ 0x2e0d2f7f, __VMLINUX_SYMBOL_STR(queue_work_on) },
+	{ 0xf3ba48f1, __VMLINUX_SYMBOL_STR(xdr_inline_decode) },
+	{ 0x90400443, __VMLINUX_SYMBOL_STR(vmalloc_to_page) },
+	{ 0xbf73ac8d, __VMLINUX_SYMBOL_STR(nfs_pageio_reset_read_mds) },
+	{ 0x8d522714, __VMLINUX_SYMBOL_STR(__rcu_read_lock) },
+	{ 0xf02baecf, __VMLINUX_SYMBOL_STR(nfs4_init_deviceid_node) },
+	{ 0x4f6b400b, __VMLINUX_SYMBOL_STR(_copy_from_user) },
+	{ 0x4d7c4dff, __VMLINUX_SYMBOL_STR(pnfs_set_lo_fail) },
+	{ 0x7d705738, __VMLINUX_SYMBOL_STR(blk_start_plug) },
+	{ 0x52d56a6b, __VMLINUX_SYMBOL_STR(xdr_set_scratch_buffer) },
+	{ 0x5cb45915, __VMLINUX_SYMBOL_STR(pnfs_ld_read_done) },
+	{ 0xce104fcc, __VMLINUX_SYMBOL_STR(__put_page) },
+	{ 0x3f0f863f, __VMLINUX_SYMBOL_STR(try_module_get) },
+	{ 0x997e459c, __VMLINUX_SYMBOL_STR(pnfs_register_layoutdriver) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=nfsv4,sunrpc,nfs";
+

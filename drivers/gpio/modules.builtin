@@ -1,0 +1,2 @@
+kernel/drivers/gpio/gpio-crystalcove.ko
+kernel/drivers/gpio/gpio-lynxpoint.ko

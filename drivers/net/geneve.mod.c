@@ -1,0 +1,117 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xd980759f, __VMLINUX_SYMBOL_STR(register_netdevice) },
+	{ 0x609f1c7e, __VMLINUX_SYMBOL_STR(synchronize_net) },
+	{ 0x9ffa3a75, __VMLINUX_SYMBOL_STR(netdev_max_backlog) },
+	{ 0x5fecfc6, __VMLINUX_SYMBOL_STR(gro_find_receive_by_type) },
+	{ 0xd498b757, __VMLINUX_SYMBOL_STR(ip_tunnel_get_stats64) },
+	{ 0x19f462ab, __VMLINUX_SYMBOL_STR(kfree_call_rcu) },
+	{ 0x79aa04a2, __VMLINUX_SYMBOL_STR(get_random_bytes) },
+	{ 0xba9e8be2, __VMLINUX_SYMBOL_STR(udp_tunnel_notify_del_rx_port) },
+	{ 0xe65a73d7, __VMLINUX_SYMBOL_STR(ip_tunnel_metadata_cnt) },
+	{ 0xc7a4fbed, __VMLINUX_SYMBOL_STR(rtnl_lock) },
+	{ 0x5b56e022, __VMLINUX_SYMBOL_STR(dst_release) },
+	{ 0xc0a3d105, __VMLINUX_SYMBOL_STR(find_next_bit) },
+	{ 0xd2da1048, __VMLINUX_SYMBOL_STR(register_netdevice_notifier) },
+	{ 0x72f71476, __VMLINUX_SYMBOL_STR(udp_tunnel_xmit_skb) },
+	{ 0x949f7342, __VMLINUX_SYMBOL_STR(__alloc_percpu) },
+	{ 0x31f81d2d, __VMLINUX_SYMBOL_STR(dst_cache_set_ip6) },
+	{ 0xff632b49, __VMLINUX_SYMBOL_STR(udp_tun_rx_dst) },
+	{ 0x3e3bcce9, __VMLINUX_SYMBOL_STR(param_ops_bool) },
+	{ 0x52eb047c, __VMLINUX_SYMBOL_STR(dst_cache_get_ip4) },
+	{ 0x19442723, __VMLINUX_SYMBOL_STR(dst_cache_get_ip6) },
+	{ 0x37bd84b3, __VMLINUX_SYMBOL_STR(skb_scrub_packet) },
+	{ 0x198ed204, __VMLINUX_SYMBOL_STR(netif_napi_del) },
+	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
+	{ 0xc9ec4e21, __VMLINUX_SYMBOL_STR(free_percpu) },
+	{ 0xe0729564, __VMLINUX_SYMBOL_STR(__dynamic_netdev_dbg) },
+	{ 0x9d0d6206, __VMLINUX_SYMBOL_STR(unregister_netdevice_notifier) },
+	{ 0x108c7010, __VMLINUX_SYMBOL_STR(udp_sock_create6) },
+	{ 0x61f2a7af, __VMLINUX_SYMBOL_STR(setup_udp_tunnel_sock) },
+	{ 0x902c1a49, __VMLINUX_SYMBOL_STR(netif_rx) },
+	{ 0xc32ed92, __VMLINUX_SYMBOL_STR(__pskb_pull_tail) },
+	{ 0x351ded96, __VMLINUX_SYMBOL_STR(__iptunnel_pull_header) },
+	{ 0xfe7c4287, __VMLINUX_SYMBOL_STR(nr_cpu_ids) },
+	{ 0xf1db1704, __VMLINUX_SYMBOL_STR(nla_memcpy) },
+	{ 0x97bcb6ac, __VMLINUX_SYMBOL_STR(udp_tunnel_sock_release) },
+	{ 0x59c1d110, __VMLINUX_SYMBOL_STR(__cpu_possible_mask) },
+	{ 0xedbb6d30, __VMLINUX_SYMBOL_STR(unregister_pernet_subsys) },
+	{ 0x9fdecc31, __VMLINUX_SYMBOL_STR(unregister_netdevice_many) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0xdde2bdc4, __VMLINUX_SYMBOL_STR(ethtool_op_get_link) },
+	{ 0x449ad0a7, __VMLINUX_SYMBOL_STR(memcmp) },
+	{ 0x3eeb6c98, __VMLINUX_SYMBOL_STR(udp_tunnel_push_rx_port) },
+	{ 0x709d2ebf, __VMLINUX_SYMBOL_STR(free_netdev) },
+	{ 0x4f66d59, __VMLINUX_SYMBOL_STR(nla_put) },
+	{ 0x5792f848, __VMLINUX_SYMBOL_STR(strlcpy) },
+	{ 0xf79361d3, __VMLINUX_SYMBOL_STR(netif_napi_add) },
+	{ 0x2469810f, __VMLINUX_SYMBOL_STR(__rcu_read_unlock) },
+	{ 0x2043b76c, __VMLINUX_SYMBOL_STR(gro_find_complete_by_type) },
+	{ 0x8fb8d133, __VMLINUX_SYMBOL_STR(ipv6_stub) },
+	{ 0x5e48198b, __VMLINUX_SYMBOL_STR(__skb_get_hash) },
+	{ 0x5a70dea, __VMLINUX_SYMBOL_STR(rtnl_link_unregister) },
+	{ 0xbd671048, __VMLINUX_SYMBOL_STR(__alloc_percpu_gfp) },
+	{ 0x3fecbff0, __VMLINUX_SYMBOL_STR(rtnl_configure_link) },
+	{ 0x8c04edcb, __VMLINUX_SYMBOL_STR(napi_gro_receive) },
+	{ 0xe9474bde, __VMLINUX_SYMBOL_STR(dst_cache_init) },
+	{ 0xcba79a88, __VMLINUX_SYMBOL_STR(udp_tunnel_notify_add_rx_port) },
+	{ 0x9f83b3c1, __VMLINUX_SYMBOL_STR(__napi_schedule) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0xa202a8e5, __VMLINUX_SYMBOL_STR(kmalloc_order_trace) },
+	{ 0x640dcd8f, __VMLINUX_SYMBOL_STR(kfree_skb) },
+	{ 0xada38766, __VMLINUX_SYMBOL_STR(dst_cache_destroy) },
+	{ 0x39d188f4, __VMLINUX_SYMBOL_STR(napi_complete_done) },
+	{ 0x36b9f401, __VMLINUX_SYMBOL_STR(eth_type_trans) },
+	{ 0xdca0af25, __VMLINUX_SYMBOL_STR(register_pernet_subsys) },
+	{ 0x258e3070, __VMLINUX_SYMBOL_STR(pskb_expand_head) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0x5ec5587, __VMLINUX_SYMBOL_STR(ether_setup) },
+	{ 0x5a5023b8, __VMLINUX_SYMBOL_STR(iptunnel_handle_offloads) },
+	{ 0xed433664, __VMLINUX_SYMBOL_STR(__per_cpu_offset) },
+	{ 0xb6a7be05, __VMLINUX_SYMBOL_STR(unregister_netdevice_queue) },
+	{ 0x70c6ac5d, __VMLINUX_SYMBOL_STR(ip_route_output_flow) },
+	{ 0x7d3c2f28, __VMLINUX_SYMBOL_STR(rtnl_create_link) },
+	{ 0xf6ebc03b, __VMLINUX_SYMBOL_STR(net_ratelimit) },
+	{ 0xc3f8e54c, __VMLINUX_SYMBOL_STR(eth_validate_addr) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x66e29a4b, __VMLINUX_SYMBOL_STR(rtnl_link_register) },
+	{ 0xd113cc98, __VMLINUX_SYMBOL_STR(udp_tunnel6_xmit_skb) },
+	{ 0xb69ea42c, __VMLINUX_SYMBOL_STR(dst_cache_set_ip4) },
+	{ 0x53569707, __VMLINUX_SYMBOL_STR(this_cpu_off) },
+	{ 0xe0f534cf, __VMLINUX_SYMBOL_STR(udp_sock_create4) },
+	{ 0xe113bbbc, __VMLINUX_SYMBOL_STR(csum_partial) },
+	{ 0x5a71fe84, __VMLINUX_SYMBOL_STR(consume_skb) },
+	{ 0x7a8c0f53, __VMLINUX_SYMBOL_STR(ip6_dst_hoplimit) },
+	{ 0x8d522714, __VMLINUX_SYMBOL_STR(__rcu_read_lock) },
+	{ 0x19751f3b, __VMLINUX_SYMBOL_STR(eth_mac_addr) },
+	{ 0xd542439, __VMLINUX_SYMBOL_STR(__ipv6_addr_type) },
+	{ 0x6e720ff2, __VMLINUX_SYMBOL_STR(rtnl_unlock) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=udp_tunnel,ip6_udp_tunnel";
+
+
+MODULE_INFO(srcversion, "E27732EE8D9C9233E4A04EA");

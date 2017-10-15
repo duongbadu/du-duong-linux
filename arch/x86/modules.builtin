@@ -1,0 +1,2 @@
+kernel/arch/x86/events/intel/intel-uncore.ko
+kernel/arch/x86/platform/intel/iosf_mbi.ko

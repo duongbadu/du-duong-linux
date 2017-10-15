@@ -1,0 +1,130 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x8a64d0a9, __VMLINUX_SYMBOL_STR(acpi_bus_register_driver) },
+	{ 0x15fe913c, __VMLINUX_SYMBOL_STR(nvdimm_cmd_mask) },
+	{ 0xf9a482f9, __VMLINUX_SYMBOL_STR(msleep) },
+	{ 0x366bb607, __VMLINUX_SYMBOL_STR(nd_blk_region_provider_data) },
+	{ 0x2cfaa601, __VMLINUX_SYMBOL_STR(nd_blk_region_to_dimm) },
+	{ 0x61f4039, __VMLINUX_SYMBOL_STR(acpi_get_table_with_size) },
+	{ 0x2bb55d6e, __VMLINUX_SYMBOL_STR(acpi_remove_notify_handler) },
+	{ 0x4c9459e4, __VMLINUX_SYMBOL_STR(nvdimm_bus_attribute_group) },
+	{ 0xc364ae22, __VMLINUX_SYMBOL_STR(iomem_resource) },
+	{ 0x779a18af, __VMLINUX_SYMBOL_STR(kstrtoll) },
+	{ 0xb404c5ce, __VMLINUX_SYMBOL_STR(region_intersects) },
+	{ 0x43a53735, __VMLINUX_SYMBOL_STR(__alloc_workqueue_key) },
+	{ 0x35bf2acd, __VMLINUX_SYMBOL_STR(nd_fletcher64) },
+	{ 0xd9091363, __VMLINUX_SYMBOL_STR(acpi_install_notify_handler) },
+	{ 0x9e9eb34c, __VMLINUX_SYMBOL_STR(acpi_check_dsm) },
+	{ 0x3ee6a8dd, __VMLINUX_SYMBOL_STR(nvdimm_attribute_group) },
+	{ 0x1db7706b, __VMLINUX_SYMBOL_STR(__copy_user_nocache) },
+	{ 0xb66421b2, __VMLINUX_SYMBOL_STR(acpi_str_to_uuid) },
+	{ 0xff00176, __VMLINUX_SYMBOL_STR(memcpy_mcsafe_unrolled) },
+	{ 0x79f08c71, __VMLINUX_SYMBOL_STR(nd_blk_region_set_provider_data) },
+	{ 0xc0a3d105, __VMLINUX_SYMBOL_STR(find_next_bit) },
+	{ 0xb8b2b1f7, __VMLINUX_SYMBOL_STR(mce_register_decode_chain) },
+	{ 0x88bfa7e, __VMLINUX_SYMBOL_STR(cancel_work_sync) },
+	{ 0xa8257da7, __VMLINUX_SYMBOL_STR(nvdimm_kobj) },
+	{ 0x8bb2c100, __VMLINUX_SYMBOL_STR(nvdimm_pmem_region_create) },
+	{ 0x44a81d5f, __VMLINUX_SYMBOL_STR(acpi_evaluate_object) },
+	{ 0xf0ef15b4, __VMLINUX_SYMBOL_STR(list_sort) },
+	{ 0x345843ed, __VMLINUX_SYMBOL_STR(kernfs_put) },
+	{ 0x4a10a332, __VMLINUX_SYMBOL_STR(acpi_bus_unregister_driver) },
+	{ 0x3e3bcce9, __VMLINUX_SYMBOL_STR(param_ops_bool) },
+	{ 0x6ae54ada, __VMLINUX_SYMBOL_STR(nvdimm_bus_add_poison) },
+	{ 0x651181, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0xe1a75e92, __VMLINUX_SYMBOL_STR(mce_is_memory_error) },
+	{ 0x811a9138, __VMLINUX_SYMBOL_STR(nd_cmd_in_size) },
+	{ 0x91715312, __VMLINUX_SYMBOL_STR(sprintf) },
+	{ 0xef349efc, __VMLINUX_SYMBOL_STR(nvdimm_bus_register) },
+	{ 0xb2c6c7e3, __VMLINUX_SYMBOL_STR(nd_numa_attribute_group) },
+	{ 0xc4f33165, __VMLINUX_SYMBOL_STR(nvdimm_flush) },
+	{ 0xc805f93, __VMLINUX_SYMBOL_STR(clflush_cache_range) },
+	{ 0x9e88526, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0xd8e52017, __VMLINUX_SYMBOL_STR(insert_resource) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0xd0cf60a6, __VMLINUX_SYMBOL_STR(nd_region_acquire_lane) },
+	{ 0xa30093da, __VMLINUX_SYMBOL_STR(nvdimm_provider_data) },
+	{ 0x8fd50eef, __VMLINUX_SYMBOL_STR(dev_err) },
+	{ 0x7e4527c6, __VMLINUX_SYMBOL_STR(__mutex_init) },
+	{ 0x3da49fdf, __VMLINUX_SYMBOL_STR(nvdimm_volatile_region_create) },
+	{ 0xd1f95155, __VMLINUX_SYMBOL_STR(devm_nvdimm_memremap) },
+	{ 0x449ad0a7, __VMLINUX_SYMBOL_STR(memcmp) },
+	{ 0x8c66e4a8, __VMLINUX_SYMBOL_STR(nd_region_attribute_group) },
+	{ 0x7d96cea3, __VMLINUX_SYMBOL_STR(wait_for_completion_interruptible) },
+	{ 0xd39a9ff8, __VMLINUX_SYMBOL_STR(to_nvdimm_bus_dev) },
+	{ 0xb23e40de, __VMLINUX_SYMBOL_STR(nvdimm_name) },
+	{ 0x27c78332, __VMLINUX_SYMBOL_STR(kernfs_find_and_get_ns) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0xccb2a533, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0x8c03d20c, __VMLINUX_SYMBOL_STR(destroy_workqueue) },
+	{ 0x5d68cfa5, __VMLINUX_SYMBOL_STR(nvdimm_bus_unregister) },
+	{ 0xf1c346b6, __VMLINUX_SYMBOL_STR(nd_cmd_dimm_desc) },
+	{ 0x5a068a2b, __VMLINUX_SYMBOL_STR(nd_mapping_attribute_group) },
+	{ 0xe3a53f4c, __VMLINUX_SYMBOL_STR(sort) },
+	{ 0x56b5abb8, __VMLINUX_SYMBOL_STR(nd_cmd_out_size) },
+	{ 0xad3a843d, __VMLINUX_SYMBOL_STR(devm_kfree) },
+	{ 0xbafb770f, __VMLINUX_SYMBOL_STR(nd_region_release_lane) },
+	{ 0xa5e75e9a, __VMLINUX_SYMBOL_STR(acpi_evaluate_dsm) },
+	{ 0x42160169, __VMLINUX_SYMBOL_STR(flush_workqueue) },
+	{ 0xcfff73db, __VMLINUX_SYMBOL_STR(nd_device_attribute_group) },
+	{ 0xceeae1f4, __VMLINUX_SYMBOL_STR(to_nd_desc) },
+	{ 0xb347bb2c, __VMLINUX_SYMBOL_STR(work_busy) },
+	{ 0xfbe2ddca, __VMLINUX_SYMBOL_STR(remove_resource) },
+	{ 0x76710363, __VMLINUX_SYMBOL_STR(nvdimm_has_flush) },
+	{ 0x695124b4, __VMLINUX_SYMBOL_STR(devm_add_action) },
+	{ 0x830bd142, __VMLINUX_SYMBOL_STR(_dev_info) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x3b4db8f2, __VMLINUX_SYMBOL_STR(acpi_find_child_device) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0x998f7b9e, __VMLINUX_SYMBOL_STR(to_nvdimm_bus) },
+	{ 0x18aadf51, __VMLINUX_SYMBOL_STR(kernfs_notify) },
+	{ 0x1e13f75c, __VMLINUX_SYMBOL_STR(__dynamic_dev_dbg) },
+	{ 0x8384647a, __VMLINUX_SYMBOL_STR(acpi_map_pxm_to_online_node) },
+	{ 0x1c69c2e9, __VMLINUX_SYMBOL_STR(nvdimm_create) },
+	{ 0x1e047854, __VMLINUX_SYMBOL_STR(warn_slowpath_fmt) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0x9fce3514, __VMLINUX_SYMBOL_STR(nvdimm_bus_check_dimm_count) },
+	{ 0xa8c9536d, __VMLINUX_SYMBOL_STR(mcsafe_key) },
+	{ 0x21436cac, __VMLINUX_SYMBOL_STR(to_nd_region) },
+	{ 0xb352177e, __VMLINUX_SYMBOL_STR(find_first_bit) },
+	{ 0x247c30a2, __VMLINUX_SYMBOL_STR(dev_warn) },
+	{ 0xf2d7d87, __VMLINUX_SYMBOL_STR(mce_unregister_decode_chain) },
+	{ 0x2e0d2f7f, __VMLINUX_SYMBOL_STR(queue_work_on) },
+	{ 0xb2d5a552, __VMLINUX_SYMBOL_STR(complete) },
+	{ 0xff86b0b5, __VMLINUX_SYMBOL_STR(to_nvdimm) },
+	{ 0x9807d25f, __VMLINUX_SYMBOL_STR(devm_kmalloc) },
+	{ 0x66c397f7, __VMLINUX_SYMBOL_STR(nd_cmd_bus_desc) },
+	{ 0x4a492ac9, __VMLINUX_SYMBOL_STR(param_ops_uint) },
+	{ 0x25e83fa9, __VMLINUX_SYMBOL_STR(nd_region_provider_data) },
+	{ 0xf8027fcc, __VMLINUX_SYMBOL_STR(to_nd_blk_region) },
+	{ 0xbb2b93a2, __VMLINUX_SYMBOL_STR(nvdimm_region_notify) },
+	{ 0x94f46c7f, __VMLINUX_SYMBOL_STR(nvdimm_blk_region_create) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+
+MODULE_ALIAS("acpi*:ACPI0012:*");

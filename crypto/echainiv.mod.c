@@ -1,0 +1,40 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x2138640d, __VMLINUX_SYMBOL_STR(crypto_unregister_template) },
+	{ 0x9e6fed85, __VMLINUX_SYMBOL_STR(crypto_register_template) },
+	{ 0x87bf1f75, __VMLINUX_SYMBOL_STR(aead_register_instance) },
+	{ 0xf50bc1ea, __VMLINUX_SYMBOL_STR(aead_exit_geniv) },
+	{ 0xa866f1ec, __VMLINUX_SYMBOL_STR(aead_init_geniv) },
+	{ 0x6e89cc21, __VMLINUX_SYMBOL_STR(aead_geniv_alloc) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0xb903674c, __VMLINUX_SYMBOL_STR(scatterwalk_map_and_copy) },
+	{ 0x63a9950a, __VMLINUX_SYMBOL_STR(aead_geniv_free) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+

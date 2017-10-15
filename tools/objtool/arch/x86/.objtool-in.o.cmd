@@ -1,0 +1,1 @@
+cmd_/home/student/ws_student/kernel/linux-4.9.56/tools/objtool/arch/x86/objtool-in.o :=  ld -r -o /home/student/ws_student/kernel/linux-4.9.56/tools/objtool/arch/x86/objtool-in.o  /home/student/ws_student/kernel/linux-4.9.56/tools/objtool/arch/x86/decode.o

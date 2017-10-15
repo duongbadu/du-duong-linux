@@ -1,0 +1,133 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x2d3385d3, __VMLINUX_SYMBOL_STR(system_wq) },
+	{ 0xc1586756, __VMLINUX_SYMBOL_STR(netdev_info) },
+	{ 0x977a7a93, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xd2b09ce5, __VMLINUX_SYMBOL_STR(__kmalloc) },
+	{ 0xdae80100, __VMLINUX_SYMBOL_STR(_raw_spin_unlock) },
+	{ 0x375bad8c, __VMLINUX_SYMBOL_STR(napi_disable) },
+	{ 0x79aa04a2, __VMLINUX_SYMBOL_STR(get_random_bytes) },
+	{ 0x3ecd2d52, __VMLINUX_SYMBOL_STR(pci_disable_device) },
+	{ 0xc7a4fbed, __VMLINUX_SYMBOL_STR(rtnl_lock) },
+	{ 0x5762a0da, __VMLINUX_SYMBOL_STR(arp_tbl) },
+	{ 0xc4dc0bf7, __VMLINUX_SYMBOL_STR(switchdev_port_bridge_setlink) },
+	{ 0x3ac9436c, __VMLINUX_SYMBOL_STR(pci_disable_msix) },
+	{ 0x3699a24b, __VMLINUX_SYMBOL_STR(switchdev_port_fdb_dump) },
+	{ 0x1b66c649, __VMLINUX_SYMBOL_STR(netif_carrier_on) },
+	{ 0xa99b39c2, __VMLINUX_SYMBOL_STR(prandom_bytes) },
+	{ 0xd2da1048, __VMLINUX_SYMBOL_STR(register_netdevice_notifier) },
+	{ 0x2460c724, __VMLINUX_SYMBOL_STR(netif_carrier_off) },
+	{ 0xbe4da188, __VMLINUX_SYMBOL_STR(netdev_all_lower_get_next) },
+	{ 0x23495edc, __VMLINUX_SYMBOL_STR(__dev_kfree_skb_any) },
+	{ 0x15d93988, __VMLINUX_SYMBOL_STR(pci_release_regions) },
+	{ 0x8fdf772a, __VMLINUX_SYMBOL_STR(init_timer_key) },
+	{ 0x6f6ebbe3, __VMLINUX_SYMBOL_STR(neigh_destroy) },
+	{ 0x6fce3049, __VMLINUX_SYMBOL_STR(switchdev_trans_item_enqueue) },
+	{ 0x4629334c, __VMLINUX_SYMBOL_STR(__preempt_count) },
+	{ 0xbf2b51fe, __VMLINUX_SYMBOL_STR(switchdev_port_fdb_del) },
+	{ 0x5a00da2b, __VMLINUX_SYMBOL_STR(switchdev_port_bridge_getlink) },
+	{ 0x26a3d2e2, __VMLINUX_SYMBOL_STR(__neigh_create) },
+	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
+	{ 0x9d0d6206, __VMLINUX_SYMBOL_STR(unregister_netdevice_notifier) },
+	{ 0xd9221413, __VMLINUX_SYMBOL_STR(__neigh_event_send) },
+	{ 0x8e4ada5f, __VMLINUX_SYMBOL_STR(__netdev_alloc_skb) },
+	{ 0xc32ed92, __VMLINUX_SYMBOL_STR(__pskb_pull_tail) },
+	{ 0x9e88526, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0xd4a74794, __VMLINUX_SYMBOL_STR(pci_set_master) },
+	{ 0x3f5c6471, __VMLINUX_SYMBOL_STR(del_timer_sync) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0x16444d73, __VMLINUX_SYMBOL_STR(netif_tx_wake_queue) },
+	{ 0x11089ac7, __VMLINUX_SYMBOL_STR(_ctype) },
+	{ 0x8fd50eef, __VMLINUX_SYMBOL_STR(dev_err) },
+	{ 0x1916e38c, __VMLINUX_SYMBOL_STR(_raw_spin_unlock_irqrestore) },
+	{ 0x6d294e43, __VMLINUX_SYMBOL_STR(clock_t_to_jiffies) },
+	{ 0xdde2bdc4, __VMLINUX_SYMBOL_STR(ethtool_op_get_link) },
+	{ 0x3c3fce39, __VMLINUX_SYMBOL_STR(__local_bh_enable_ip) },
+	{ 0x449ad0a7, __VMLINUX_SYMBOL_STR(memcmp) },
+	{ 0x4c9d28b0, __VMLINUX_SYMBOL_STR(phys_base) },
+	{ 0x709d2ebf, __VMLINUX_SYMBOL_STR(free_netdev) },
+	{ 0xfc3bba0f, __VMLINUX_SYMBOL_STR(unregister_fib_notifier) },
+	{ 0xf38d4801, __VMLINUX_SYMBOL_STR(register_netdev) },
+	{ 0xe67fa7c3, __VMLINUX_SYMBOL_STR(netif_receive_skb) },
+	{ 0x5792f848, __VMLINUX_SYMBOL_STR(strlcpy) },
+	{ 0x4fe1eddf, __VMLINUX_SYMBOL_STR(unregister_netevent_notifier) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0x393d4de9, __VMLINUX_SYMBOL_STR(crc32_le) },
+	{ 0xfa5bcf35, __VMLINUX_SYMBOL_STR(mod_timer) },
+	{ 0xf79361d3, __VMLINUX_SYMBOL_STR(netif_napi_add) },
+	{ 0xa735db59, __VMLINUX_SYMBOL_STR(prandom_u32) },
+	{ 0x2072ee9b, __VMLINUX_SYMBOL_STR(request_threaded_irq) },
+	{ 0x622598b1, __VMLINUX_SYMBOL_STR(init_wait_entry) },
+	{ 0x1e1555f9, __VMLINUX_SYMBOL_STR(arch_dma_alloc_attrs) },
+	{ 0x830bd142, __VMLINUX_SYMBOL_STR(_dev_info) },
+	{ 0x78764f4e, __VMLINUX_SYMBOL_STR(pv_irq_ops) },
+	{ 0x42c8de35, __VMLINUX_SYMBOL_STR(ioremap_nocache) },
+	{ 0x22f79f1b, __VMLINUX_SYMBOL_STR(pci_enable_msix_range) },
+	{ 0x9f83b3c1, __VMLINUX_SYMBOL_STR(__napi_schedule) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x3e7b3728, __VMLINUX_SYMBOL_STR(switchdev_trans_item_dequeue) },
+	{ 0xd62c833f, __VMLINUX_SYMBOL_STR(schedule_timeout) },
+	{ 0x39d188f4, __VMLINUX_SYMBOL_STR(napi_complete_done) },
+	{ 0x36b9f401, __VMLINUX_SYMBOL_STR(eth_type_trans) },
+	{ 0x50fad434, __VMLINUX_SYMBOL_STR(round_jiffies_up) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0xcba9e5eb, __VMLINUX_SYMBOL_STR(netdev_err) },
+	{ 0x6853bb42, __VMLINUX_SYMBOL_STR(pci_unregister_driver) },
+	{ 0xe582963d, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0xe259ae9e, __VMLINUX_SYMBOL_STR(_raw_spin_lock) },
+	{ 0xbf49cd12, __VMLINUX_SYMBOL_STR(switchdev_port_fdb_add) },
+	{ 0x680ec266, __VMLINUX_SYMBOL_STR(_raw_spin_lock_irqsave) },
+	{ 0xa6bbd805, __VMLINUX_SYMBOL_STR(__wake_up) },
+	{ 0xf6ebc03b, __VMLINUX_SYMBOL_STR(net_ratelimit) },
+	{ 0xc724a9ea, __VMLINUX_SYMBOL_STR(netdev_warn) },
+	{ 0x2207a57f, __VMLINUX_SYMBOL_STR(prepare_to_wait_event) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0x2a9835fd, __VMLINUX_SYMBOL_STR(pci_request_regions) },
+	{ 0xce5a46f5, __VMLINUX_SYMBOL_STR(dma_supported) },
+	{ 0xedc03953, __VMLINUX_SYMBOL_STR(iounmap) },
+	{ 0x5185e020, __VMLINUX_SYMBOL_STR(__pci_register_driver) },
+	{ 0xf08242c2, __VMLINUX_SYMBOL_STR(finish_wait) },
+	{ 0x247c30a2, __VMLINUX_SYMBOL_STR(dev_warn) },
+	{ 0x6bacd73c, __VMLINUX_SYMBOL_STR(unregister_netdev) },
+	{ 0xbbe897a7, __VMLINUX_SYMBOL_STR(switchdev_port_bridge_dellink) },
+	{ 0x2e0d2f7f, __VMLINUX_SYMBOL_STR(queue_work_on) },
+	{ 0x5a71fe84, __VMLINUX_SYMBOL_STR(consume_skb) },
+	{ 0x58003b01, __VMLINUX_SYMBOL_STR(register_fib_notifier) },
+	{ 0x4761f17c, __VMLINUX_SYMBOL_STR(register_netevent_notifier) },
+	{ 0x6868ff1a, __VMLINUX_SYMBOL_STR(call_switchdev_notifiers) },
+	{ 0xffb1d47c, __VMLINUX_SYMBOL_STR(skb_put) },
+	{ 0x76f4ed74, __VMLINUX_SYMBOL_STR(pci_enable_device) },
+	{ 0xef4284cd, __VMLINUX_SYMBOL_STR(pci_msix_vec_count) },
+	{ 0x6e720ff2, __VMLINUX_SYMBOL_STR(rtnl_unlock) },
+	{ 0xb0aca7a3, __VMLINUX_SYMBOL_STR(dma_ops) },
+	{ 0xf20dabd8, __VMLINUX_SYMBOL_STR(free_irq) },
+	{ 0x68b47ff2, __VMLINUX_SYMBOL_STR(alloc_etherdev_mqs) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+
+MODULE_ALIAS("pci:v00001B36d00000006sv*sd*bc*sc*i*");

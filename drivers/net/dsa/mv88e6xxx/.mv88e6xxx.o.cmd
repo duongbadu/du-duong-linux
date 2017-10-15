@@ -1,0 +1,1 @@
+cmd_drivers/net/dsa/mv88e6xxx/mv88e6xxx.o := ld -m elf_x86_64   -r -o drivers/net/dsa/mv88e6xxx/mv88e6xxx.o drivers/net/dsa/mv88e6xxx/chip.o drivers/net/dsa/mv88e6xxx/global1.o drivers/net/dsa/mv88e6xxx/global2.o 

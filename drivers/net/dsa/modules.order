@@ -1,0 +1,8 @@
+kernel/drivers/net/dsa/b53/b53_common.ko
+kernel/drivers/net/dsa/b53/b53_spi.ko
+kernel/drivers/net/dsa/b53/b53_mdio.ko
+kernel/drivers/net/dsa/b53/b53_mmap.ko
+kernel/drivers/net/dsa/b53/b53_srab.ko
+kernel/drivers/net/dsa/mv88e6xxx/mv88e6xxx.ko
+kernel/drivers/net/dsa/mv88e6060.ko
+kernel/drivers/net/dsa/bcm_sf2.ko

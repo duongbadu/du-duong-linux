@@ -1,0 +1,137 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x14956723, __VMLINUX_SYMBOL_STR(kmem_cache_destroy) },
+	{ 0x977a7a93, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xd2b09ce5, __VMLINUX_SYMBOL_STR(__kmalloc) },
+	{ 0x4766e06d, __VMLINUX_SYMBOL_STR(scsi_change_queue_depth) },
+	{ 0xe550305, __VMLINUX_SYMBOL_STR(iscsi_host_remove) },
+	{ 0x5a4e69f6, __VMLINUX_SYMBOL_STR(param_ops_int) },
+	{ 0x8165543a, __VMLINUX_SYMBOL_STR(ib_fmr_pool_map_phys) },
+	{ 0x7f1ac199, __VMLINUX_SYMBOL_STR(ib_dealloc_pd) },
+	{ 0x43a53735, __VMLINUX_SYMBOL_STR(__alloc_workqueue_key) },
+	{ 0xf643bcb7, __VMLINUX_SYMBOL_STR(iscsi_queuecommand) },
+	{ 0x45c062f9, __VMLINUX_SYMBOL_STR(iscsi_conn_stop) },
+	{ 0x3fec048f, __VMLINUX_SYMBOL_STR(sg_next) },
+	{ 0x17408998, __VMLINUX_SYMBOL_STR(iscsi_eh_recover_target) },
+	{ 0xcf3a69e2, __VMLINUX_SYMBOL_STR(iscsi_unregister_transport) },
+	{ 0xbf8c9136, __VMLINUX_SYMBOL_STR(iscsi_conn_get_addr_param) },
+	{ 0xf16fd1f7, __VMLINUX_SYMBOL_STR(iscsi_session_teardown) },
+	{ 0xd99127f9, __VMLINUX_SYMBOL_STR(rdma_destroy_id) },
+	{ 0x3e3bcce9, __VMLINUX_SYMBOL_STR(param_ops_bool) },
+	{ 0x21907cfa, __VMLINUX_SYMBOL_STR(ib_free_cq) },
+	{ 0x651181, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0x34bf3c7d, __VMLINUX_SYMBOL_STR(iscsi_host_add) },
+	{ 0xc32b59ff, __VMLINUX_SYMBOL_STR(ib_destroy_fmr_pool) },
+	{ 0x4629334c, __VMLINUX_SYMBOL_STR(__preempt_count) },
+	{ 0x15c8647d, __VMLINUX_SYMBOL_STR(blk_queue_virt_boundary) },
+	{ 0x91715312, __VMLINUX_SYMBOL_STR(sprintf) },
+	{ 0x47f36e5a, __VMLINUX_SYMBOL_STR(iscsi_host_alloc) },
+	{ 0xe5840ec6, __VMLINUX_SYMBOL_STR(ib_wc_status_msg) },
+	{ 0xaaa0ed0c, __VMLINUX_SYMBOL_STR(iscsi_lookup_endpoint) },
+	{ 0x72e0f62a, __VMLINUX_SYMBOL_STR(rdma_connect) },
+	{ 0x2709d0d, __VMLINUX_SYMBOL_STR(iscsi_itt_to_ctask) },
+	{ 0x9e88526, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0x808b316e, __VMLINUX_SYMBOL_STR(ib_alloc_mr) },
+	{ 0x64ab0e98, __VMLINUX_SYMBOL_STR(wait_for_completion) },
+	{ 0x6eed342d, __VMLINUX_SYMBOL_STR(scsi_is_host_device) },
+	{ 0x1916e38c, __VMLINUX_SYMBOL_STR(_raw_spin_unlock_irqrestore) },
+	{ 0x7e4527c6, __VMLINUX_SYMBOL_STR(__mutex_init) },
+	{ 0xc953672, __VMLINUX_SYMBOL_STR(iscsi_conn_start) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x20c55ae0, __VMLINUX_SYMBOL_STR(sscanf) },
+	{ 0xadf7e47c, __VMLINUX_SYMBOL_STR(__cpu_online_mask) },
+	{ 0x71b761e1, __VMLINUX_SYMBOL_STR(ib_check_mr_status) },
+	{ 0x8fc52107, __VMLINUX_SYMBOL_STR(rdma_destroy_qp) },
+	{ 0x46041016, __VMLINUX_SYMBOL_STR(iscsi_conn_send_pdu) },
+	{ 0xc17152bb, __VMLINUX_SYMBOL_STR(iscsi_session_get_param) },
+	{ 0x4c9d28b0, __VMLINUX_SYMBOL_STR(phys_base) },
+	{ 0x8c23c379, __VMLINUX_SYMBOL_STR(iscsi_host_set_param) },
+	{ 0x7d96cea3, __VMLINUX_SYMBOL_STR(wait_for_completion_interruptible) },
+	{ 0xa586207b, __VMLINUX_SYMBOL_STR(iscsi_conn_teardown) },
+	{ 0x7dff19f1, __VMLINUX_SYMBOL_STR(iscsi_put_task) },
+	{ 0x15ba61c2, __VMLINUX_SYMBOL_STR(iscsi_host_free) },
+	{ 0x4c112cca, __VMLINUX_SYMBOL_STR(iscsi_conn_get_param) },
+	{ 0xf0113640, __VMLINUX_SYMBOL_STR(kmem_cache_free) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0xccb2a533, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0x8c03d20c, __VMLINUX_SYMBOL_STR(destroy_workqueue) },
+	{ 0xd8367ca8, __VMLINUX_SYMBOL_STR(iscsi_destroy_endpoint) },
+	{ 0xd0d20369, __VMLINUX_SYMBOL_STR(init_net) },
+	{ 0x2595b55e, __VMLINUX_SYMBOL_STR(rdma_create_id) },
+	{ 0xb4d81d05, __VMLINUX_SYMBOL_STR(ib_map_mr_sg) },
+	{ 0xf46a47ed, __VMLINUX_SYMBOL_STR(rdma_create_qp) },
+	{ 0xabf5ab88, __VMLINUX_SYMBOL_STR(iscsi_set_param) },
+	{ 0xa8436fab, __VMLINUX_SYMBOL_STR(ib_unregister_event_handler) },
+	{ 0x797869a7, __VMLINUX_SYMBOL_STR(rdma_resolve_route) },
+	{ 0x82a27d45, __VMLINUX_SYMBOL_STR(kmem_cache_alloc) },
+	{ 0x8b3e8b39, __VMLINUX_SYMBOL_STR(ib_register_event_handler) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0xa202a8e5, __VMLINUX_SYMBOL_STR(kmalloc_order_trace) },
+	{ 0xc2e1a6db, __VMLINUX_SYMBOL_STR(iscsi_register_transport) },
+	{ 0xb0138b28, __VMLINUX_SYMBOL_STR(iscsi_eh_device_reset) },
+	{ 0x878cd015, __VMLINUX_SYMBOL_STR(wait_for_completion_interruptible_timeout) },
+	{ 0x898acc3f, __VMLINUX_SYMBOL_STR(ib_drain_sq) },
+	{ 0xab8693ac, __VMLINUX_SYMBOL_STR(iscsi_prep_data_out_pdu) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0xf6b41035, __VMLINUX_SYMBOL_STR(rdma_disconnect) },
+	{ 0xe582963d, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0xf5f3cdc1, __VMLINUX_SYMBOL_STR(iscsi_complete_pdu) },
+	{ 0x680ec266, __VMLINUX_SYMBOL_STR(_raw_spin_lock_irqsave) },
+	{ 0x55025c0f, __VMLINUX_SYMBOL_STR(iscsi_conn_failure) },
+	{ 0x6fcc7d5c, __VMLINUX_SYMBOL_STR(ib_query_qp) },
+	{ 0xdc730ba0, __VMLINUX_SYMBOL_STR(kmem_cache_create) },
+	{ 0xdbc469a4, __VMLINUX_SYMBOL_STR(ib_dereg_mr) },
+	{ 0xf6ed3334, __VMLINUX_SYMBOL_STR(ib_event_msg) },
+	{ 0x5ab4d680, __VMLINUX_SYMBOL_STR(iscsi_suspend_queue) },
+	{ 0x2ab81c42, __VMLINUX_SYMBOL_STR(iscsi_create_endpoint) },
+	{ 0x9df93a3b, __VMLINUX_SYMBOL_STR(iscsi_eh_abort) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0xa97e9510, __VMLINUX_SYMBOL_STR(ib_sg_to_pages) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0x9d640f6b, __VMLINUX_SYMBOL_STR(ib_create_fmr_pool) },
+	{ 0x806aeee0, __VMLINUX_SYMBOL_STR(rdma_resolve_addr) },
+	{ 0x74b72567, __VMLINUX_SYMBOL_STR(iscsi_session_setup) },
+	{ 0xca2dc7da, __VMLINUX_SYMBOL_STR(iscsi_host_get_param) },
+	{ 0x63c4d61f, __VMLINUX_SYMBOL_STR(__bitmap_weight) },
+	{ 0x7512ed9, __VMLINUX_SYMBOL_STR(__ib_alloc_pd) },
+	{ 0x57c8a075, __VMLINUX_SYMBOL_STR(iscsi_conn_bind) },
+	{ 0x97989075, __VMLINUX_SYMBOL_STR(iscsi_target_alloc) },
+	{ 0xde04341, __VMLINUX_SYMBOL_STR(ib_fmr_pool_unmap) },
+	{ 0x2e0d2f7f, __VMLINUX_SYMBOL_STR(queue_work_on) },
+	{ 0xb2d5a552, __VMLINUX_SYMBOL_STR(complete) },
+	{ 0x7f02188f, __VMLINUX_SYMBOL_STR(__msecs_to_jiffies) },
+	{ 0x907df803, __VMLINUX_SYMBOL_STR(rdma_event_msg) },
+	{ 0x23aa7c, __VMLINUX_SYMBOL_STR(iscsi_session_recovery_timedout) },
+	{ 0xea75dfa5, __VMLINUX_SYMBOL_STR(iscsi_conn_setup) },
+	{ 0x4a492ac9, __VMLINUX_SYMBOL_STR(param_ops_uint) },
+	{ 0xb0aca7a3, __VMLINUX_SYMBOL_STR(dma_ops) },
+	{ 0xf1d07104, __VMLINUX_SYMBOL_STR(ib_alloc_cq) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=scsi_mod,libiscsi,ib_core,scsi_transport_iscsi,rdma_cm";
+
+
+MODULE_INFO(srcversion, "6DC08916865540CA9C20668");

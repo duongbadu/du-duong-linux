@@ -1,0 +1,127 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x67a4b66, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x977a7a93, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xc341ae6d, __VMLINUX_SYMBOL_STR(zs_map_object) },
+	{ 0x95434e28, __VMLINUX_SYMBOL_STR(alloc_disk) },
+	{ 0xf85a1154, __VMLINUX_SYMBOL_STR(up_read) },
+	{ 0x5d9779d9, __VMLINUX_SYMBOL_STR(blk_cleanup_queue) },
+	{ 0x480a774f, __VMLINUX_SYMBOL_STR(blk_queue_io_opt) },
+	{ 0x27864d57, __VMLINUX_SYMBOL_STR(memparse) },
+	{ 0xc69b7ee5, __VMLINUX_SYMBOL_STR(zs_destroy_pool) },
+	{ 0x3465caa3, __VMLINUX_SYMBOL_STR(cpu_maps_update_begin) },
+	{ 0x82ae40db, __VMLINUX_SYMBOL_STR(generic_end_io_acct) },
+	{ 0x1bb2db7, __VMLINUX_SYMBOL_STR(zs_malloc) },
+	{ 0xc0a3d105, __VMLINUX_SYMBOL_STR(find_next_bit) },
+	{ 0x430898e0, __VMLINUX_SYMBOL_STR(blk_queue_io_min) },
+	{ 0xe2b5aa63, __VMLINUX_SYMBOL_STR(blk_queue_split) },
+	{ 0x949f7342, __VMLINUX_SYMBOL_STR(__alloc_percpu) },
+	{ 0x651181, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0x999e8297, __VMLINUX_SYMBOL_STR(vfree) },
+	{ 0x5da67adc, __VMLINUX_SYMBOL_STR(zs_compact) },
+	{ 0x4629334c, __VMLINUX_SYMBOL_STR(__preempt_count) },
+	{ 0x7f62a045, __VMLINUX_SYMBOL_STR(cpu_maps_update_done) },
+	{ 0x426ba24, __VMLINUX_SYMBOL_STR(idr_for_each) },
+	{ 0xf6170fb4, __VMLINUX_SYMBOL_STR(revalidate_disk) },
+	{ 0x70fe334f, __VMLINUX_SYMBOL_STR(sysfs_remove_group) },
+	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
+	{ 0xc9ec4e21, __VMLINUX_SYMBOL_STR(free_percpu) },
+	{ 0xe2d5255a, __VMLINUX_SYMBOL_STR(strcmp) },
+	{ 0x75b3dff3, __VMLINUX_SYMBOL_STR(down_read) },
+	{ 0xb760c755, __VMLINUX_SYMBOL_STR(fsync_bdev) },
+	{ 0x958df3ac, __VMLINUX_SYMBOL_STR(zs_free) },
+	{ 0x9e88526, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0xfe7c4287, __VMLINUX_SYMBOL_STR(nr_cpu_ids) },
+	{ 0x955a832f, __VMLINUX_SYMBOL_STR(___preempt_schedule) },
+	{ 0x3c80c06c, __VMLINUX_SYMBOL_STR(kstrtoull) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0x59c1d110, __VMLINUX_SYMBOL_STR(__cpu_possible_mask) },
+	{ 0x32b9884a, __VMLINUX_SYMBOL_STR(blk_alloc_queue) },
+	{ 0x809388ca, __VMLINUX_SYMBOL_STR(idr_destroy) },
+	{ 0x839430b2, __VMLINUX_SYMBOL_STR(__register_cpu_notifier) },
+	{ 0x290b95d0, __VMLINUX_SYMBOL_STR(current_task) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0xa8f61e6e, __VMLINUX_SYMBOL_STR(sysfs_create_group) },
+	{ 0xadf7e47c, __VMLINUX_SYMBOL_STR(__cpu_online_mask) },
+	{ 0x10385496, __VMLINUX_SYMBOL_STR(blk_queue_max_discard_sectors) },
+	{ 0x375ab9d0, __VMLINUX_SYMBOL_STR(del_gendisk) },
+	{ 0xea557c56, __VMLINUX_SYMBOL_STR(class_unregister) },
+	{ 0x6808b453, __VMLINUX_SYMBOL_STR(__unregister_cpu_notifier) },
+	{ 0x5792f848, __VMLINUX_SYMBOL_STR(strlcpy) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0xbcf1f0e6, __VMLINUX_SYMBOL_STR(zs_create_pool) },
+	{ 0xccb2a533, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0x71a50dbc, __VMLINUX_SYMBOL_STR(register_blkdev) },
+	{ 0x2276db98, __VMLINUX_SYMBOL_STR(kstrtoint) },
+	{ 0xa4fde00, __VMLINUX_SYMBOL_STR(idr_alloc) },
+	{ 0x8c2bacdc, __VMLINUX_SYMBOL_STR(up_write) },
+	{ 0x6a81339e, __VMLINUX_SYMBOL_STR(__class_register) },
+	{ 0x6fa8219d, __VMLINUX_SYMBOL_STR(generic_start_io_acct) },
+	{ 0xc4147359, __VMLINUX_SYMBOL_STR(down_write) },
+	{ 0x622598b1, __VMLINUX_SYMBOL_STR(init_wait_entry) },
+	{ 0x4a6e1010, __VMLINUX_SYMBOL_STR(bio_endio) },
+	{ 0xdf1427e5, __VMLINUX_SYMBOL_STR(idr_remove) },
+	{ 0xb5a459dc, __VMLINUX_SYMBOL_STR(unregister_blkdev) },
+	{ 0x40a9b349, __VMLINUX_SYMBOL_STR(vzalloc) },
+	{ 0x81144f9d, __VMLINUX_SYMBOL_STR(idr_find_slowpath) },
+	{ 0xd5023114, __VMLINUX_SYMBOL_STR(blk_queue_make_request) },
+	{ 0x93fca811, __VMLINUX_SYMBOL_STR(__get_free_pages) },
+	{ 0x8850a29, __VMLINUX_SYMBOL_STR(blk_queue_physical_block_size) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x1000e51, __VMLINUX_SYMBOL_STR(schedule) },
+	{ 0x7631b005, __VMLINUX_SYMBOL_STR(put_disk) },
+	{ 0x3d9ee9f0, __VMLINUX_SYMBOL_STR(clear_page) },
+	{ 0xcef51982, __VMLINUX_SYMBOL_STR(kstrtou16) },
+	{ 0xe5e15807, __VMLINUX_SYMBOL_STR(crypto_destroy_tfm) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0xcbe56bc2, __VMLINUX_SYMBOL_STR(zs_get_total_pages) },
+	{ 0xe582963d, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0xed433664, __VMLINUX_SYMBOL_STR(__per_cpu_offset) },
+	{ 0x4302d0eb, __VMLINUX_SYMBOL_STR(free_pages) },
+	{ 0x2207a57f, __VMLINUX_SYMBOL_STR(prepare_to_wait_event) },
+	{ 0x1e047854, __VMLINUX_SYMBOL_STR(warn_slowpath_fmt) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0xe071d05d, __VMLINUX_SYMBOL_STR(zs_pool_stats) },
+	{ 0x53569707, __VMLINUX_SYMBOL_STR(this_cpu_off) },
+	{ 0x4ca9669f, __VMLINUX_SYMBOL_STR(scnprintf) },
+	{ 0xf08242c2, __VMLINUX_SYMBOL_STR(finish_wait) },
+	{ 0x63c4d61f, __VMLINUX_SYMBOL_STR(__bitmap_weight) },
+	{ 0x90a1004a, __VMLINUX_SYMBOL_STR(crypto_has_alg) },
+	{ 0x222e7ce2, __VMLINUX_SYMBOL_STR(sysfs_streq) },
+	{ 0x28318305, __VMLINUX_SYMBOL_STR(snprintf) },
+	{ 0x55f5d42f, __VMLINUX_SYMBOL_STR(device_add_disk) },
+	{ 0x654e7991, __VMLINUX_SYMBOL_STR(crypto_alloc_base) },
+	{ 0xbf8dbf61, __VMLINUX_SYMBOL_STR(blk_queue_logical_block_size) },
+	{ 0x4a492ac9, __VMLINUX_SYMBOL_STR(param_ops_uint) },
+	{ 0xdde2b8da, __VMLINUX_SYMBOL_STR(bdget_disk) },
+	{ 0x8519928e, __VMLINUX_SYMBOL_STR(bdput) },
+	{ 0x924c46f8, __VMLINUX_SYMBOL_STR(zs_unmap_object) },
+	{ 0x81e88feb, __VMLINUX_SYMBOL_STR(__init_rwsem) },
+	{ 0x64e0164b, __VMLINUX_SYMBOL_STR(page_endio) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+
